@@ -1,0 +1,244 @@
+.title {
+  padding: 10px 0;
+  font-size: 25px;
+  color: red;
+  font-weight: 600;
+  text-shadow: 1px 1px 0px rgb(150, 145, 145);
+  text-transform: uppercase;
+}
+.slider {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+.parent-slide {
+  padding: 15px;
+}
+
+.slide {
+  /* margin: 0 20px; */
+  background-color: white;
+}
+.dark-theme .slide {
+  background-color: #15181f;
+}
+
+.slide-child,
+.story-item {
+  position: relative;
+}
+img {
+  margin-bottom: 10px;
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hover-content {
+  display: none;
+}
+.content {
+  margin-bottom: 10px;
+  background-color: white;
+}
+.dark-theme .content {
+  background-color: #15181f;
+}
+
+.slide-child:hover .hover-content,
+.story-item:hover .hover-content {
+  width: 250px;
+  height: 150px;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  display: block;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  color: black;
+  z-index: 3;
+  left: 140px;
+  top: 80px;
+  padding: 25px 0 25px 25px;
+  text-align: left;
+  overflow-x: 0;
+  font-size: 14px;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slide-child:hover .hover-content::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.story-item:hover .hover-content::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+.slide-hot,
+.story-hot {
+  position: absolute;
+  color: white;
+  background-color: red;
+  font-weight: 900;
+  animation-name: example;
+  animation-duration: 2s;
+  font-size: 15px;
+  padding: 5px;
+  left: 5px;
+  top: 5px;
+  animation-iteration-count: infinite;
+  font-family: cursive;
+}
+@keyframes example {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #66abe8;
+  border-style: none;
+  color: aliceblue;
+  cursor: pointer;
+}
+.slick-prev {
+  transform: translate(523px, -20px);
+}
+.slick-next {
+  transform: translate(560px, -476px);
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.slick-dots li {
+  list-style: none;
+}
+.slick-dots li button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border-style: none;
+  margin-left: 5px;
+  transform: translate(415px, -505px);
+  font-size: 0;
+  background-color: #e7e7e7;
+}
+.slick-dots li.slick-active button {
+  background-color: #3785c9;
+  color: aliceblue;
+}
+
+#main-homestory {
+  margin: 0 0 20px 0;
+}
+#main-homestory .content {
+  margin-top: 15px;
+  border: 2px solid #f8f9fa;
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.content .title {
+  text-align: center;
+  margin: 0;
+  color: rgb(55, 133, 201);
+  font-weight: 600;
+  border-bottom: 4px solid #f8f9fa;
+  text-shadow: 1px 1px 0px rgb(150, 145, 145);
+}
+
+.content .story {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.content .story .story-item,
+.story-item {
+  margin: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.story-item img {
+  width: 150px;
+  height: 200px;
+}
+.story-item-info {
+  display: none;
+}
+.story-item:hover .story-item-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  background-color: #6d6d6d;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+}
+
+.story-item .text-dot {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 3px 0;
+}
+.story-item .text-dot + p {
+  font-size: 14px;
+}
+
+.content button {
+  margin: 10px 0;
+}
+.tab_navigation-story {
+  padding: 0;
+  margin: 20px auto;
+  list-style: none;
+}
+.tab_navigation-story li {
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+.tab_navigation-story li.active {
+  background-color: blue;
+}
+.tab_container-story_area .story {
+  display: none;
+}

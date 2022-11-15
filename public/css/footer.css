@@ -1,0 +1,249 @@
+footer {
+  background-color: #15181f;
+  color: white;
+  padding: 10px;
+  font-size: 13px;
+  padding-bottom: 0px;
+}
+footer img {
+  height: 100px;
+  transform: translateY(10px);
+}
+footer .container .row {
+  align-items: center;
+  /* font-weight: 500; */
+}
+footer .container .row .zoom-text {
+  color: red;
+  font-size: 20px;
+}
+
+#toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 55px;
+  background-color: #1f8ec2;
+  position: fixed;
+  right: 17px;
+  bottom: 20px;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+#toggle:after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  top: 5px;
+  left: 7px;
+  border-radius: 50%;
+}
+.dark-theme {
+  background-color: #15181f;
+  color: #e5e5e5;
+}
+.dark-theme #toggle {
+  background-color: #ffffff;
+}
+.dark-theme #toggle:after {
+  background-color: transparent;
+  box-shadow: 10px 10px #1f8ec2;
+  top: -4px;
+  left: 20px;
+}
+#lucky {
+  position: fixed;
+  left: 20px;
+  bottom: 0px;
+  font-size: 12px;
+}
+#lucky img {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  z-index: 9999;
+  margin-bottom: 0;
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.nut-mo-chatbox {
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 110px;
+  left: 28px;
+}
+.nut-mo-chatbox img {
+  width: 100%;
+  height: 70px;
+}
+/* Ẩn chatbox mặc định */
+.Chatbox {
+  display: none;
+  position: fixed;
+  bottom: 120px;
+  left: 30px;
+  z-index: 9999;
+  background-image: url("./../images/itachi-wallpaper.jpg");
+  color: white;
+  width: 800px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* comment */
+.Chatbox .comment_parent_chat {
+  /* border: 1px solid #e7e7e7; */
+  padding: 10px;
+  height: 350px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding-bottom: 80px;
+}
+.Chatbox .comment_parent_chat::-webkit-scrollbar {
+  display: none;
+}
+#myForm .comment_child_chat,
+.comment_child_you {
+  display: flex;
+  align-items: start;
+}
+#myForm .comment_child_chat {
+  justify-content: start;
+}
+.comment_child_you {
+  justify-content: end;
+}
+#myForm .comment_child_chat img,
+.comment_child_you img {
+  height: 50px;
+  width: 80px;
+}
+
+#myForm .comment_info_chat .comment_name {
+  margin: 8px 0px;
+}
+#myForm .comment_info_chat .comment_name .span1 {
+  font-size: 14px;
+  font-weight: 700;
+}
+#myForm .comment_info_chat .comment_name .span2 {
+  background: linear-gradient(#ff00e0, #12cab8);
+  animation: rotate 3.5s linear infinite;
+  padding: 2px 5px;
+  color: white;
+  width: 170px;
+  font-size: 11px;
+
+  /* border: 1px solid yellow; */
+}
+#myForm .comment_child_you .comment_info_chat {
+  text-align: end;
+}
+#myForm .comment_info_chat .comment_time {
+  font-size: 10px;
+  margin-bottom: 10px;
+  margin-left: 11px;
+}
+#myForm .comment_info_chat .comment_content {
+  width: 270px;
+  min-height: 30px;
+  font-size: 12px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  word-wrap: break-word;
+  height: auto;
+  /* margin: 0 30px; */
+  padding: 5px 10px;
+  color: black;
+}
+#myForm .comment_child_you .comment_info_chat .comment_content {
+  background-color: rgb(103, 228, 233);
+}
+#myForm .comment_info_chat .comment_content::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-right-color: white;
+  border-left: 0;
+  border-top: 0;
+  /* margin-top: -10.5px; */
+  margin-left: -21px;
+}
+#myForm .comment_child_you .comment_info_chat .comment_content::after {
+  content: "";
+  position: absolute;
+  left: 107%;
+  top: 0%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-right-color: rgb(103, 228, 233);
+  border-left: 0;
+  border-top: 0;
+  transform: rotate(180deg);
+  transform: scaleX(-1);
+
+  /* margin-top: -10.5px; */
+  margin-left: -21px;
+}
+#myForm .SendChat {
+  display: flex;
+  margin: 10px 0;
+}
+#myForm .SendChat input {
+  width: 88%;
+  margin: 0 5px;
+}
+#myForm .comment_input_chatting {
+  width: 86%;
+  resize: none;
+  font-size: 14px;
+  color: black;
+  margin: 0 10px;
+  /* height: 70px; */
+  padding: 5px 10px;
+  background-color: #fff;
+  cursor: text;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px black;
+}
+#myForm .comment_input_chatting .emojionearea-editor {
+  min-height: 35px;
+  max-height: 35px;
+}

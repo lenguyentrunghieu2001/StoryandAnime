@@ -1,0 +1,116 @@
+.Chapter-Story {
+  margin-top: 40px;
+}
+.info-chapter .name-chapter {
+  display: flex;
+  justify-content: center;
+}
+.info-chapter .name-chapter h1 {
+  margin: 10px 5px 30px 0;
+  font-size: 30px;
+  color: red;
+}
+.info-chapter .content-chapter {
+  word-spacing: 2px;
+  line-height: 1.75;
+  margin: 0px 100px;
+  font-size: 17px;
+}
+.info-chapter .content-chapter img {
+  width: 100% !important;
+  height: 100% !important;
+  margin-top: -20px;
+  margin-bottom: 0;
+}
+.option-chapter-story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  z-index: 99;
+  height: 50px;
+  background-color: #3785c9;
+  color: white;
+}
+
+.option-chapter-story .option {
+  margin: 0 40px;
+  cursor: pointer;
+  line-height: 50px;
+}
+.option-chapter-story .list-chapter {
+  position: relative;
+}
+.option-chapter-story .list-chapter ul {
+  display: none;
+  background-color: #3785c9;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+}
+.option-chapter-story .list-chapter:hover ul {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: -72px;
+  overflow-y: scroll;
+  height: 300px;
+}
+.option-chapter-story .list-chapter ul li {
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.option-chapter-story .list-chapter ul li:last-child {
+  border-bottom: none;
+}
+.option-chapter-story .list-chapter ul li a {
+  color: white;
+}
+.icon {
+  position: absolute;
+  font-size: 40px;
+  left: 80px;
+  cursor: pointer;
+  display: none;
+}
+#flipbook {
+  color: black;
+  width: 80%;
+  height: 560px;
+  margin: 10px auto;
+  display: none;
+}
+#flipbook img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#flipbook.shadow,
+#flipbook .shadow {
+  --webkit-box-shadow: 0 4px 10px #666;
+  --moz-box-shadow: 0 4px 10px #666;
+  --ms-box-shadow: 0 4px 10px #666;
+  --o-box-shadow: 0 4px 10px #666;
+  box-shadow: 0 4px 10px #666;
+}
+
+#flipbook .page {
+  background: #e7e7e7;
+  font-size: 20px;
+}
+#flipbook .page div {
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#flipbook .page p {
+  width: 500px !important;
+}

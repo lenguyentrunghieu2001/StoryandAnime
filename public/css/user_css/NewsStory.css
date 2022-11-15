@@ -1,0 +1,235 @@
+#new {
+  width: 80%;
+  margin: 0 auto 20px;
+  color: black;
+}
+
+#new .title {
+  width: 160px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#new .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+#new .grid-container .grid-item .content {
+  font-size: 14px;
+  background: white;
+  color: black;
+}
+#new .grid-container .grid-item .content .content_name {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+#new .grid-container .grid-item button {
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+#new .grid-container .grid-item:first-child button {
+}
+
+#new .grid-container .modal-content {
+  padding: 20px;
+  line-height: 25px;
+}
+#new .grid-container .modal-content h1 {
+  font-size: 22px;
+  color: blue;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+#new .news-popular .modal-content {
+  padding: 20px;
+  line-height: 25px;
+}
+#new .news-popular .modal-content h1 {
+  font-size: 22px;
+  color: blue;
+  font-weight: 400;
+  margin: 20px 0;
+}
+#new .news-popular .modal-content img {
+  width: 100%;
+  height: 300px;
+}
+#new .grid-container .grid-item:nth-child(1) .content {
+  font-size: 18px;
+}
+#new .grid-container .grid-item {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  transform: skew(-4deg);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#new .grid-container .grid-item:nth-child(3),
+#new .grid-container .grid-item:nth-child(4) {
+  margin-left: 20px;
+}
+#new .grid-container .grid-item:nth-child(2) {
+  margin-left: 30px;
+}
+#new .grid-container .grid-item:nth-child(5) {
+  margin-left: 12px;
+}
+#new .grid-container .grid-item img {
+  width: 100%;
+  height: 70%;
+}
+
+#new .grid-container .grid-item:nth-child(1) img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+}
+#new .grid-container .grid-item:nth-child(1) {
+  height: 415px;
+  width: 400px;
+}
+#new .grid-container .grid-item:nth-child(1) {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#new .title-popular {
+  text-align: center;
+  margin: 45px auto 5px;
+  color: rgb(55, 133, 201);
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.news-popular .news-item {
+  display: flex;
+  margin: 20px;
+  background: white;
+  color: black;
+  align-items: center;
+  padding: 20px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.news-popular .news-item div {
+  margin: 20px;
+}
+.news-popular .news-item img {
+  width: 300px;
+  height: 100%;
+}
+.news-popular .news-item div h1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(41, 78, 83);
+  letter-spacing: 1.5px;
+}
+.news-popular .news-item div .content {
+  font-size: 14px;
+  margin: 5px;
+  text-align: justify;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  background: white;
+}
+.news-popular .news-item div .content img {
+  display: none;
+}
+.news-popular .news-item .content-info {
+  opacity: 0.6;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.news-popular .load-more {
+  font-weight: 800;
+}
+
+.news-popular .news-item:nth-child(3) ~ .news-item {
+  display: none;
+}
+.news-popular .loading {
+  display: none;
+  height: 32px;
+  width: 32px;
+  margin: 0 auto;
+  animation: loaderl 3s linear infinite;
+}
+
+@keyframes loaderl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.news-popular .loading span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  clip: rect(16px, 32px, 32px, 0);
+  animation: loader2 1.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+@keyframes loader2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.news-popular .loading span::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border: 3px solid transparent;
+  border-bottom: 3px solid black;
+  border-radius: 50%;
+}
+.news-popular .loading span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border-top: 3px solid blue;
+  border-radius: 50%;
+}
+.news-popular .load-more.show-loader {
+  color: black;
+  background-color: white;
+}
+.news-popular .load-more.show-loader .loading {
+  display: block;
+}

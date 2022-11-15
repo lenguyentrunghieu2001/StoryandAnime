@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;600&display=swap");
+body {
+  background-color: white;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+.header_user {
+  background: linear-gradient(
+    178deg,
+    #3785c9 7%,
+    rgba(222, 238, 246, 1) 49%,
+    rgba(255, 255, 255, 1) 64%
+  );
+  height: 80px;
+  padding-bottom: 40px;
+}
+header {
+  height: 40px;
+  width: 100%;
+  align-items: center;
+}
+header .logo_header {
+  display: flex;
+  align-items: center;
+}
+header .logo_header img {
+  height: 70px;
+}
+header .logo_header p {
+  font-size: 25px;
+  transform: translate(-9px, -9px);
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  color: #1f8ec2;
+  font-weight: 500;
+  text-shadow: -1px -1px 0px #1d86b7;
+}
+.user-info_header {
+  display: flex;
+}
+
+.user-info_header .name-user button {
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  height: 38px;
+}
+
+.user-info_header div {
+  margin: 0 5px;
+}

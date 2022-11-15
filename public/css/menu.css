@@ -1,0 +1,80 @@
+menu {
+  margin: 0px 0 10px 0;
+  background: #3785c9;
+  height: 40px;
+}
+menu nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+menu nav li {
+  list-style: none;
+  line-height: 40px;
+  /* width: 125px; */
+  padding: 0 20px;
+}
+
+menu nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+menu nav li:hover a {
+  text-decoration: none;
+  /* opacity: 0.8; */
+  color: yellow;
+}
+
+.dropdown-category {
+  position: relative;
+}
+.dropdown-category .child-nav {
+  background-color: black;
+  width: 600px;
+  position: absolute;
+  left: -200px;
+  top: 50px;
+  display: none;
+  z-index: 999;
+}
+.dropdown-category:hover .child-nav::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 250px;
+  z-index: 6;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  text-align: center;
+  background-color: black;
+}
+.dropdown-category:hover .child-nav::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  width: 600px;
+  height: 10px;
+  /* transform: rotate(45deg); */
+  text-align: center;
+  color: red;
+}
+.dropdown-category:hover .child-nav {
+  display: block;
+  cursor: pointer;
+}
+.dropdown-category .child-nav {
+  text-align: center;
+  padding: 10px 60px;
+  border-radius: 5px;
+}
+
+.dropdown-category .child-nav li:hover {
+  background-color: white;
+}
+.dropdown-category .child-nav li:hover a {
+  color: black;
+}

@@ -1,0 +1,94 @@
+#HomeAnime .anime_item {
+  width: 200px;
+  margin: 20px 5px;
+}
+
+#HomeAnime .title {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: start;
+}
+
+#HomeAnime {
+  margin: 0 8%;
+}
+
+#HomeAnime .content {
+  margin-top: 40px;
+}
+
+#HomeAnime .content div a {
+  font-weight: bold;
+  font-size: 15px;
+  color: green;
+  cursor: pointer;
+}
+
+#HomeAnime .content .line-parent {
+  color: green;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  position: absolute;
+  left: 20%;
+}
+
+#HomeAnime .content .line-parent .line {
+  border: 1px solid;
+  height: 2px;
+  width: 100%;
+  background-color: wheat;
+}
+
+#HomeAnime .content .line-parent i {
+  font-size: 30px;
+}
+
+#HomeAnime .anime_parent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#HomeAnime .anime_item img {
+  width: 200px;
+  height: 300px;
+  position: relative;
+}
+
+#HomeAnime .anime_item .videohover {
+  display: none;
+  width: 60px;
+}
+
+#HomeAnime .anime_item {
+  position: relative;
+  cursor: pointer;
+}
+
+.anime_item:hover img {
+  filter: blur(0.5px);
+  opacity: 0.7;
+  transition: 0.4s linear;
+}
+
+#HomeAnime .anime_item:hover .videohover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  height: auto;
+  filter: blur(0px);
+}
+
+#HomeAnime .anime_item .text-dot {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  /* font-weight: bold; */
+  font-size: 16px;
+  margin: 3px 0;
+}

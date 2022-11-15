@@ -1,0 +1,216 @@
+#main-detailstory {
+  margin: 20px 0;
+}
+
+#main-detailstory .Tree,
+.Tree {
+  margin: 20px 0 20px 0;
+  border-bottom: 1px solid #007bff;
+}
+#main-detailstory .Tree a,
+.Tree a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.info-main-story {
+  padding: 10px;
+  background-color: white;
+}
+.dark-theme .info-main-story {
+  background-color: #15181f;
+}
+.info-main-story .status-story {
+  display: flex;
+  font-size: 12px;
+  margin: 10px 0;
+  border: 1px solid;
+  padding: 5px 0;
+  justify-content: space-around;
+}
+.info-main-story .status-story div:first-child {
+  font-weight: bold;
+}
+.info-main-story .name-story {
+  margin-top: 10px;
+  font-size: 25px;
+  color: rgb(241, 57, 57);
+}
+.info-main-story .summary-story {
+  font-size: 14px;
+  margin: 10px 0;
+  line-height: 25px;
+}
+.info-main-story .like button {
+  cursor: pointer;
+}
+.info-main-story .area-drawer {
+  display: flex;
+  margin: 10px 0;
+}
+
+.info-main-story .area-drawer p:first-child {
+  font-weight: bold;
+  color: #1d86b7;
+  margin-right: 5px;
+}
+.info-main-story .area-drawer .name_trans {
+  text-decoration: none;
+}
+.info-main-story .area-drawer .name_trans p {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+.info-main-story .area-drawer .name_trans:hover {
+  opacity: 0.8;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.info-main-story .area-drawer p {
+  font-size: 15px;
+}
+
+.info-main-story .area-drawer button {
+  margin: 0 10px 10px 0;
+  max-width: 100% !important;
+  height: 30px !important;
+  font-size: 12px;
+  transform: translateX(-40px);
+}
+
+.list-chapter-story {
+  margin: 40px 0;
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  border: 1px solid #e7e7e7;
+}
+.dark-theme .list-chapter-story {
+  background-color: #15181f;
+}
+.list-chapter-story h1 {
+  background-color: rgb(75, 70, 70);
+  line-height: 40px;
+  color: white;
+  padding-left: 20px;
+}
+.list-chapter-story .chapter-story {
+  cursor: pointer;
+  height: 550px;
+  overflow-y: scroll;
+}
+.list-chapter-story .chapter-story .chapter-story-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-bottom: 1px solid;
+}
+
+.title_comment {
+  margin: 50px 0 10px 0;
+  font-size: 30px;
+}
+#comment {
+  margin-bottom: 20px;
+}
+#comment .comment_parent {
+  /* border: 1px solid #e7e7e7; */
+  padding: 10px;
+}
+#comment .comment_child {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+#comment .comment_child img {
+  height: 80px;
+}
+#comment .comment_input {
+  margin: 10px auto;
+  width: 94%;
+  min-height: 100px;
+  resize: none;
+  font-size: 14px;
+  color: black;
+  /* height: 70px; */
+  padding: 5px 10px;
+  background-color: #fff;
+  cursor: text;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px black;
+}
+/* #comment .comment_child .comment_info {
+}
+
+#comment .comment_child .comment_info:after {
+} */
+
+.comment_info .comment_name {
+  margin: 10px 0 5px 0;
+}
+.comment_info .comment_name span:first-child {
+  font-size: 18px;
+  font-weight: 700;
+}
+.comment_info .comment_name span:last-child {
+  background: linear-gradient(#ff00e0, #12cab8);
+  animation: rotate 3.5s linear infinite;
+  padding: 2px 5px;
+  color: white;
+  width: 170px;
+  /* border: 1px solid yellow; */
+}
+
+.comment_info .comment_time {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.comment_info .comment_content {
+  width: 600px;
+  min-height: 80px;
+  font-size: 14px;
+  line-height: 1.25;
+  margin-bottom: 5px;
+  position: relative;
+  background: #e7e7e7;
+  border-radius: 0.4em;
+  /* margin: 0 30px; */
+  padding: 5px 20px;
+  color: black;
+}
+.comment_info .comment_content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-right-color: #e7e7e7;
+  border-left: 0;
+  border-top: 0;
+  /* margin-top: -10.5px; */
+  margin-left: -21px;
+}
