@@ -14,7 +14,7 @@ include './inc/menu.php';
                 $sql_hotanime = mysqli_query($con, "SELECT * from tbl_anime where hot =1  order by view desc");
                 while ($row_hotanime  = mysqli_fetch_array($sql_hotanime)) {
                 ?>
-                    <div class="anime_item">
+                    <div class="anime_item" onclick="window.location.href='DetailAnime/updateviewAnime.php?id_anime=<?= $row_hotanime['id_anime'] ?>'">
                         <img src="../Admin/Anime/uploads/<?= $row_hotanime['image'] ?>" alt="">
                         <img src="./../public/images/video.png" alt="" class="videohover">
                         <h3 class="text-dot"><?= $row_hotanime['name'] ?> </h3>

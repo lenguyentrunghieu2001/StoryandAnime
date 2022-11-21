@@ -129,9 +129,9 @@ include '../inc/menu.php';
                             <!-- <td><span class="mode mode_off">Inactive</span></td> -->
                             <td class="option">
                                 <li type="button" data-toggle="modal" data-target=".bd-example-modal-lg<?= $i ?>">
-                                    <a href=" ../News/editNews.php?id=<?= $row_news['id'] ?>">
+                                    <button>
                                         <i class="fa fa-edit"></i>Xem
-                                    </a>
+                                    </button>
                                 </li>
 
                             </td>

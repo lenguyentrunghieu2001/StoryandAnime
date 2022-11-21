@@ -20,7 +20,7 @@ while ($row_category = mysqli_fetch_array($sql_category)) {
             $sql_anime = mysqli_query($con, "SELECT * FROM tbl_anime INNER JOIN tbl_anime_category on tbl_anime.id_anime  = tbl_anime_category.id_anime WHERE tbl_anime_category.id_category = $id_category order by tbl_anime.date_anime desc limit 6");
             while ($row_anime = mysqli_fetch_array($sql_anime)) {
             ?>
-                <div class="anime_item">
+                <div class="anime_item" onclick="window.location.href='DetailAnime/updateviewAnime.php?id_anime=<?= $row_anime['id_anime'] ?>'">
                     <img src="../Admin/Anime/uploads/<?= $row_anime['image'] ?>" alt="">
                     <img src="./../public/images/video.png" alt="" class="videohover">
                     <h3 class="text-dot"><?= $row_anime['name'] ?> </h3>

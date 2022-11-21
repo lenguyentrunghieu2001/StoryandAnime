@@ -3,6 +3,7 @@
         <div class="row d-flex">
             <div class="col-sm-4 createSegment">
                 <a class="btn dim_button create_new" onclick="window.location.href='../Anime/insertanime.php'"> <span class="glyphicon glyphicon-plus"></span>Thêm</a>
+                <a class="btn dim_button create_new" onclick="window.location.href='../Anime/updatehot.php'"> <span class="glyphicon glyphicon-plus"></span>Cập nhật</a>
             </div>
             <div class="col-sm-8 add_flex">
                 <div class="form-group searchInput">

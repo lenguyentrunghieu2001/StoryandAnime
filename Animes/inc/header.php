@@ -47,7 +47,7 @@ if (mysqli_num_rows($sql_package_anime_checkusername) == 0) {
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="stylesheet" href="../public/css/anime/Homeanime.css">
     <link rel="stylesheet" href="../public/css/anime/DetailAnime.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
 
 
     <title>Web Anime HV</title>
@@ -63,7 +63,7 @@ if (mysqli_num_rows($sql_package_anime_checkusername) == 0) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
     <script type="text/javascript" src="../public/js/turn.min.js"></script>
     <script src="https://cdn.ckeditor.com/4.20.0/standard/ckeditor.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js" integrity="sha512-hkvXFLlESjeYENO4CNi69z3A1puvONQV5Uh+G4TUDayZxSLyic5Kba9hhuiNLbHqdnKNMk2PxXKm0v7KDnWkYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <div class="header_user">
@@ -75,7 +75,26 @@ if (mysqli_num_rows($sql_package_anime_checkusername) == 0) {
             </div>
             <!-- search -->
             <div class="search-stories_header col-md-5 col-sm-8 col-8">
+                <div class="input-group">
+                    <div class="row">
+                        <input type="text" name="search_box" class="form-control" style="width: 350px; border-radius: 20px;font-size:14px;" placeholder="Bạn muồn tìm anime gì " id="gsearchsimpleanime">
+                        <i class="fa-solid fa-magnifying-glass" style="position: absolute; right: 110px;top:9px;font-size:19px; color:black;" autocomplete="on"></i>
+                        <ul class="list-group" style="position: absolute;top:40px;left:-40px; z-index:999;">
 
+                        </ul>
+                        <div id="localSearchSimple"></div>
+                        <div id="detail"></div>
+                    </div>
+                </div>
+                <script>
+                    var input = document.getElementById("gsearchsimpleanime");
+                    input.addEventListener("keypress", function(event) {
+                        if (event.key === "Enter") {
+                            event.preventDefault();
+                            window.location.href = 'searchAnime.php?search=' + input.value;
+                        }
+                    });
+                </script>
             </div>
             <!--end search -->
 
