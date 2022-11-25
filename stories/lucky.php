@@ -52,7 +52,7 @@ include './../Database/Connect.php';
 
     <?php
     $username = $_SESSION['loginuser'];
-    $sql_lucky = mysqli_query($con, "SELECT * FROM tbl_lucky WHERE username = '$username' AND DAY(datetime) = DAY(NOW())");
+    $sql_lucky = mysqli_query($con, "SELECT * FROM tbl_lucky WHERE username = '$username' AND DAY(datetime) = DAY(NOW()) AND MONTH(datetime) = MONTH(NOW()) AND YEAR(datetime) = YEAR(NOW())");
     if (mysqli_num_rows($sql_lucky) > 0) {
     ?>
         <h1>BẠN ĐÃ QUAY HẾT LƯỢT HÔM NAY</h1>
