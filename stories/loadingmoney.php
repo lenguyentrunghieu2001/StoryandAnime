@@ -33,7 +33,7 @@ include './inc/menu.php';
                             <option value="100000">100,000</option>
                             <option value="200000">200,000</option>
                         </select>
-                        <button class="btn" style="color:white;background-color:blueviolet ;" name="captureWallet">MOMO QR</button>
+                        <button class="btn" style="color:white;background-color:blueviolet ;" name="captureWallet" id="captureWallet">MOMO QR</button>
                         <button class="btn" style="color:white;background-color:blueviolet ;" name="payWithATM" id="payWithATM">MOMO ATM</button>
                     </form>
                 </div>

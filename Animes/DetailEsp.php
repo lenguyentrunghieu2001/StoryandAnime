@@ -34,7 +34,7 @@ $row_esp = mysqli_fetch_array($sql_esp);
         <div class="title">Tập phim:</div>
         <div class="tonghop">
             <?php
-            $sql_esp_list = mysqli_query($con, "SELECT * FROM tbl_espisode ");
+            $sql_esp_list = mysqli_query($con, "SELECT * FROM tbl_espisode Where id_anime = '$row_esp[id_anime]'");
             while ($row_esp_list = mysqli_fetch_array($sql_esp_list)) {
                 if ($id == $row_esp_list['id']) {
             ?>
