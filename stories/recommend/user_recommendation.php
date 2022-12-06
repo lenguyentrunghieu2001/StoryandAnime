@@ -27,10 +27,6 @@ if (mysqli_num_rows($story_star_check) > 0) {
     <p style="margin: 11px auto;">Vui lòng đánh giá 1 truyện bất kỳ</p>
 <?php
 }
-// echo '<pre>';
-// print_r($matrix);
-// echo '</pre>';
-
 
 
 // foreach ($array as $key => $value) {
@@ -41,6 +37,9 @@ if (mysqli_num_rows($story_star_check) > 0) {
 ?>
 
 <?php
+
+
+
 $n = 0;
 foreach ($array as $key => $value) {
 

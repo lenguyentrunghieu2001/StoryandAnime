@@ -116,5 +116,4 @@ if (isset($_POST['captureWallet'])) {
     //Just a example, please check more in there
 
     header('Location: ' . $jsonResult['payUrl']);
-    die();
 }

@@ -38,7 +38,7 @@ function getRecommendation($matrix, $person)
                     }
                     $total[$key] += $matrix[$otherPerson][$key] * $sim;
 
-                    if (!array_key_exists($otherPerson, $simsum)) {
+                    if (!array_key_exists($key, $simsum)) {
                         $simsum[$key] = 0;
                     }
                     $simsum[$key] += $sim;
